@@ -1,0 +1,250 @@
+html,
+body {}
+
+body {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #42474c;
+    /*
+    background: #000;
+    color: #fff;
+    */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    margin: 20px;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+h2 em {
+    font-weight: 400;
+    font-style: italic;
+}
+
+F h4 {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 300;
+}
+
+a {}
+
+a:hover {}
+
+p {}
+
+div {}
+
+hr {
+    border: 1px solid #42474c;
+}
+
+
+/*TEMPLATE*/
+
+
+/*Cores padrões*/
+
+.bg-gray {
+    background: #f7f7f7;
+}
+
+
+/* CLASSES ÚTEIS */
+
+.pdd-25 {
+    padding: 25px 0;
+}
+
+.pdd-50 {
+    padding: 50px 0;
+}
+
+.mrg-25 {
+    margin: 25px 0;
+}
+
+.mrg-50 {
+    margin: 50px 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.tleft {
+    text-align: left;
+}
+
+.tright {
+    text-align: right;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+.tjustify {
+    text-align: justify;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+.w30 {
+    width: 30%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w33 {
+    width: 33.3%;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w20 {
+    width: 10%;
+}
+
+.w75 {
+    width: 75%;
+    height: 75%;
+}
+
+
+/* ESTRUTURAS */
+
+
+/*Logotipo*/
+
+h1#logotipo {
+    display: block;
+}
+
+h1#logotipo a {
+    background: url("../images/senac-logo.png");
+    width: 170px;
+    display: block;
+    height: 100px;
+}
+
+h1#logotipo a span {
+    display: none;
+}
+
+
+/*Menu*/
+
+ul.menu {
+    list-style: none;
+    padding: 0;
+}
+
+ul.menu.horizontal li {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+ul.menu.vertical li {
+    display: block;
+    margin: 1px 0;
+}
+
+ul.menu li a {
+    display: block;
+    padding: 10px 25px;
+    color: #FFF;
+    background: #F60;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 1s;
+}
+
+ul.menu li a:hover {
+    background: #000;
+}
+
+.footer {
+    text-align: center;
+    font: white;
+    background-color: black;
+    margin-top: 0 auto;
+    text-align: center;
+}
+
+.imgfundo {
+    text-align: center;
+}
+
+.imagemfundo {
+    width: 600px;
+    height: 400px;
+}
+
+.centralizatexto {
+    text-align: center;
+}
+
+.espacamento {
+    padding: 15px;
+}
+
+.icone {
+    font-size: 75px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 823px) {
+    .w25 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .w25 {
+        width: 100%;
+    }
+}
