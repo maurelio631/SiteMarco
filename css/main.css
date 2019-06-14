@@ -158,10 +158,10 @@ h1#logotipo {
 }
 
 h1#logotipo a {
-    background: url("../images/Logo\ 1\ com\ sombra\ menor.png");
-    width: 170px;
+    background: url("/images/Logo\ 1\ com\ sombra\ menor.png");
+    width: 450px;
     display: block;
-    height: 100px;
+    height: 350px;
 }
 
 h1#logotipo a span {
@@ -215,6 +215,11 @@ ul.menu li a:hover {
 }
 
 .imagemfundo {
+    width: 1200px;
+    height: 500px;
+}
+
+.imagemfundo2 {
     width: 600px;
     height: 400px;
 }
