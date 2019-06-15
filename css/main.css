@@ -159,9 +159,9 @@ h1#logotipo {
 
 h1#logotipo a {
     background: url("/images/Logo\ 1\ com\ sombra\ menor.png");
-    width: 450px;
+    width: 0 auto;
     display: block;
-    height: 350px;
+    height: 0 auto;
 }
 
 h1#logotipo a span {
@@ -261,5 +261,3 @@ input {
         width: 100%;
     }
 }
-
-xxx

@@ -1,4 +1,3 @@
-
 var tabela = document.querySelector("table");
 var formulario = document.querySelector("form");
 var nome;
@@ -13,20 +12,20 @@ var Usuario = {
 };
 
 var pesquisaInput = document.querySelector("#pesquisa");
-pesquisaInput.addEventListener("input", function(){
-    
+pesquisaInput.addEventListener("input", function() {
+
     var tBody = tabela.querySelector("tbody");
     var usuariosTr = tBody.querySelectorAll("tr");
 
-    for(var i=0; i < usuariosTr.length; i++){
+    for (var i = 0; i < usuariosTr.length; i++) {
         var tDs = usuariosTr[i].querySelectorAll("td");
 
         var expressao = new RegExp(pesquisaInput.value, "i");
-        
-        if( expressao.test(tDs[1].textContent) ){
+
+        if (expressao.test(tDs[1].textContent)) {
             usuariosTr[i].classList.remove("invisivel");
             console.log(tDs[1].textContent + " encontrado");
-        }else{
+        } else {
             usuariosTr[i].classList.add("invisivel");
             console.log("Não encontrado");
         }
@@ -37,28 +36,28 @@ pesquisaInput.addEventListener("input", function(){
 
 });
 
-tabela.addEventListener("dblclick", function(evt){
+tabela.addEventListener("dblclick", function(evt) {
 
     var alvoEvento = evt.target;
     var paiDoAlvo = alvoEvento.parentNode;
-    
+
     var usuarios = paiDoAlvo.querySelectorAll("td");
     nome = formulario.querySelector("#nome");
     dataNasc = formulario.querySelector("#dataNasc");
 
     nome.value = usuarios[1].textContent;
-    
+
     var dataEng = usuarios[3].textContent.split("/");
-    
+
     dataNasc.value = dataEng[2] + "-" + dataEng[1] + "-" + dataEng[0];
-   
-});   
+
+});
 
 
 var btnFormulario = formulario.querySelector("button");
 
-formulario.addEventListener("submit", function(evt){
- 
+formulario.addEventListener("submit", function(evt) {
+
     var totalUsuarios = tabela.querySelector("#total-usuarios")
     nome = formulario.querySelector("#nome").value;
     dataNasc = formulario.querySelector("#dataNasc").value;
@@ -72,11 +71,11 @@ formulario.addEventListener("submit", function(evt){
     totalUsuarios.textContent = Usuario.Id;
 
     formulario.reset();
-    
+
     evt.preventDefault();
 });
 
-function ConverteIdade(dataNasc){
+function ConverteIdade(dataNasc) {
     var dataQuebrada = dataNasc.split("-");
     var dataPtBr = dataQuebrada[2] + "/" + dataQuebrada[1] + "/" + dataQuebrada[0];
 
@@ -85,11 +84,11 @@ function ConverteIdade(dataNasc){
     var dataAtual = new Date();
 
     var idade = dataAtual.getFullYear() - dataQuebrada[0];
-    
+
     Usuario.Idade = idade;
 }
 
-function CriaLinhaTabela(){
+function CriaLinhaTabela() {
     var tBody = tabela.querySelector("tbody");
 
     Usuario.Id = tBody.querySelectorAll("tr").length + 1;
