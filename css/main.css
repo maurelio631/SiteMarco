@@ -236,6 +236,14 @@ ul.menu li a:hover {
     font-size: 75px;
 }
 
+input {
+    margin-left: 10px;
+}
+
+.input1 {
+    margin-left: 111px;
+}
+
 @media screen and (max-width: 1024px) {
     .container {
         width: 100%;
@@ -253,3 +261,5 @@ ul.menu li a:hover {
         width: 100%;
     }
 }
+
+xxx
