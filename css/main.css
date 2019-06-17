@@ -208,12 +208,22 @@ ul.menu li a:hover {
     background: #000;
 }
 
+a:link,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
 .footer {
     text-align: center;
     font: white;
     background-color: black;
     margin-top: 0 auto;
     text-align: center;
+}
+
+.centraliza {
+    align-content: center;
 }
 
 .imgfundo {
