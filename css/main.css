@@ -34,7 +34,7 @@ h2 em {
     font-style: italic;
 }
 
-F h4 {
+h4 {
     text-transform: uppercase;
     margin: 0;
     font-weight: 300;
@@ -151,6 +151,9 @@ hr {
     max-width: 700px;
     height: 400px;
     background: #000;
+    text-align: center;
+    border-left: 25%;
+    border-right: 25%;
 }
 
 
@@ -164,14 +167,19 @@ h1#logotipo {
 }
 
 h1#logotipo a {
-    background: url(/images/logo.png);
+    background: url("/images/logo.png");
     width: 0 auto;
     display: block;
     height: 0 auto;
+    margin: 0 auto;
 }
 
 h1#logotipo a span {
     display: none;
+}
+
+.tiracorescrota {
+    text-decoration: none;
 }
 
 
@@ -185,12 +193,15 @@ ul.menu {
 ul.menu.horizontal li {
     display: inline-block;
     margin: 0 auto;
-    width: 100%;
 }
 
 ul.menu.vertical li {
     display: block;
     margin: 1px 0;
+}
+
+.divpreta {
+    background: #000;
 }
 
 ul.menu li a {
@@ -208,10 +219,9 @@ ul.menu li a:hover {
     background: #000;
 }
 
-a:link,
-a:active,
-a:visited {
+a {
     text-decoration: none;
+    color: blue;
 }
 
 .footer {
