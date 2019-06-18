@@ -148,7 +148,7 @@ hr {
 }
 
 .galleria {
-    max-width: 1000px;
+    max-width: 700px;
     height: 400px;
     background: #000;
 }
@@ -164,7 +164,7 @@ h1#logotipo {
 }
 
 h1#logotipo a {
-    background: url(../images/logo.png);
+    background: url(/images/logo.png);
     width: 0 auto;
     display: block;
     height: 0 auto;
@@ -197,7 +197,7 @@ ul.menu li a {
     display: block;
     padding: 10px 25px;
     color: #FFF;
-    background: #F60;
+    background: black;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
