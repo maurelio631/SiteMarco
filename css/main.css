@@ -151,9 +151,6 @@ hr {
     max-width: 700px;
     height: 400px;
     background: #000;
-    text-align: center;
-    border-left: 25%;
-    border-right: 25%;
 }
 
 
@@ -166,12 +163,14 @@ h1#logotipo {
     display: block;
 }
 
+.posição {
+    padding: 100px;
+}
+
 h1#logotipo a {
     background: url("/images/logo.png");
-    width: 0 auto;
+    width: 350px;
     display: block;
-    height: 0 auto;
-    margin: 0 auto;
 }
 
 h1#logotipo a span {
@@ -187,7 +186,8 @@ h1#logotipo a span {
 
 ul.menu {
     list-style: none;
-    padding: 0;
+    padding: inherit;
+    margin: 0 auto;
 }
 
 ul.menu.horizontal li {
@@ -202,6 +202,7 @@ ul.menu.vertical li {
 
 .divpreta {
     background: #000;
+    height: 50px;
 }
 
 ul.menu li a {
@@ -213,6 +214,7 @@ ul.menu li a {
     text-transform: uppercase;
     font-weight: bold;
     transition: background 1s;
+    margin-top: 6px;
 }
 
 ul.menu li a:hover {
