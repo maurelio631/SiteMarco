@@ -11,7 +11,7 @@ var Usuario = {
     Idade: ""
 };
 
-var pesquisaInput = document.querySelector("#pesquisa");
+/*var pesquisaInput = document.querySelector("#pesquisa");
 pesquisaInput.addEventListener("input", function() {
 
     var tBody = tabela.querySelector("tbody");
@@ -86,7 +86,7 @@ function ConverteIdade(dataNasc) {
     var idade = dataAtual.getFullYear() - dataQuebrada[0];
 
     Usuario.Idade = idade;
-}
+};
 
 function CriaLinhaTabela() {
     var tBody = tabela.querySelector("tbody");
@@ -114,4 +114,4 @@ function CriaLinhaTabela() {
 
     tBody.appendChild(tR);
     console.log(tBody);
-}
+};*/
