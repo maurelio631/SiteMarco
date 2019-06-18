@@ -11,7 +11,7 @@ var Usuario = {
     Idade: ""
 };
 
-/*var pesquisaInput = document.querySelector("#pesquisa");
+var pesquisaInput = document.querySelector("#pesquisa");
 pesquisaInput.addEventListener("input", function() {
 
     var tBody = tabela.querySelector("tbody");
@@ -114,4 +114,9 @@ function CriaLinhaTabela() {
 
     tBody.appendChild(tR);
     console.log(tBody);
-};*/
+};
+require(['./lightgallery.js'], function() {
+    require(["./lg-zoom.js", "./lg-thumbnail.js"], function() {
+        lightGallery(document.getElementById('lightgallery'));
+    });
+});

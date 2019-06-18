@@ -4,7 +4,7 @@ body {}
 body {
     font-family: 'Open sans', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
     color: #42474c;
     /*
     background: #000;
@@ -36,8 +36,8 @@ h2 em {
 
 h4 {
     text-transform: uppercase;
+    font-weight: bold;
     margin: 0;
-    font-weight: 300;
 }
 
 a {}
@@ -59,7 +59,21 @@ hr {
 /*Cores padrões*/
 
 .bg-gray {
-    background: #f7f7f7;
+    background: #929292;
+}
+
+.fundo1 {
+    background: rgb(177, 176, 176);
+}
+
+.tamanhodiv {
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.tamanhodivmax {
+    max-height: 500px;
+    max-width: 750px;
 }
 
 
@@ -147,13 +161,9 @@ hr {
     height: 75%;
 }
 
-.galleria {
-    max-width: 700px;
-    height: 400px;
-    background: #000;
-    text-align: center;
-    border-left: 25%;
-    border-right: 25%;
+.imagensportfolio {
+    max-width: 200px;
+    max-height: 400px;
 }
 
 
