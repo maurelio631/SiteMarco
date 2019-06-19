@@ -28,9 +28,10 @@
 </head>
 
 <body>
-    <h1 id="logotipo">
-        <a href="index.html">Marco</a>
-        <div class="clear"></div>
+    <div>
+        <h1 id="logotipo">
+            <a href="index.html">Marco</a>
+    </div>
     </h1>
     <div class="divprincipal">
         <div>
@@ -91,14 +92,42 @@
                 <a class="tiracorescrota" target="_blank" href="https://www.linkedin.com/in/marco-aur%C3%A9lio-449459109/"><i class="fab fa-linkedin icone espacamento"></i></a>
                 <a class="tiracorescrota" target="_blank" href="https://github.com/maurelio631"><i class="fab fa-github icone espacamento"></i></a>
             </div>
-            <footer class="centralizatexto footer">Todos os Direitos Reservados®</footer>
+
+            <footer>
+                <a id="subirTopo">
+                    <br> subir
+                </a>
+            </footer>
             <!-- INCLUDE DO JQUERY-->
             <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
             <!-- COMPATIBILIZAR ELEMENTOS MODERNOS DO NAVEGADOR "HTML5" -->
             <script src="js/modernizr-custom.js"></script>
 
             <!-- INSERE SCRIPT PERSONALIZADO -->
             <script src="js/main.js"></script>
+            <script type="text/javascript">
+                jQuery(document).ready(function() {
+
+                    jQuery("#subirTopo").hide();
+
+                    jQuery('a#subirTopo').click(function() {
+                        jQuery('body,html').animate({
+                            scrollTop: 0
+                        }, 800);
+                        return false;
+                    });
+
+                    jQuery(window).scroll(function() {
+                        if (jQuery(this).scrollTop() > 1000) {
+                            jQuery('#subirTopo').fadeIn();
+                        } else {
+                            jQuery('#subirTopo').fadeOut();
+                        }
+                    });
+                });
+            </script>
+            </script>
         </div>
     </div>
 </body>
