@@ -161,14 +161,8 @@ hr {
     height: 75%;
 }
 
-.galleria {
-    max-width: 700px;
-    height: 400px;
-    background: #000;
-}
-
-.divprincipal {
-    background: #e9e1e1
+.textopequeno {
+    font-size: 1px;
 }
 
 
@@ -185,10 +179,21 @@ h1#logotipo {
     padding: 100px;
 }
 
+.espacotop {
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.espacotopmenor {
+    padding: 20px;
+}
+
 h1#logotipo a {
-    background: url("/images/logo.png");
-    width: 350px;
+    background: url(images/logo.png) top left no-repeat;
+    width: 162px;
+    height: 75px;
     display: block;
+    text-indent: -9999px;
 }
 
 h1#logotipo a span {
@@ -223,6 +228,10 @@ ul.menu.vertical li {
     height: auto;
 }
 
+.divprincipal {
+    background: rgb(234, 229, 229);
+}
+
 ul.menu li a {
     display: block;
     padding: 10px 25px;
@@ -246,7 +255,7 @@ a {
 
 .footer {
     text-align: center;
-    font: white;
+    color: white;
     background-color: black;
     margin-top: 0 auto;
     text-align: center;
