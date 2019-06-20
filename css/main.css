@@ -343,8 +343,8 @@ input {
 }
 
 @media screen and (max-width: 720px) {
-    .w25 {
-        width: 50%;
+    .menu {
+        width: 400px;
     }
 }
 
