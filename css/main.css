@@ -329,6 +329,10 @@ input {
     opacity: 1;
 }
 
+label.telefone {
+    margin-right: 100px;
+}
+
 @media screen and (max-width: 1024px) {
     .container {
         width: 100%;
@@ -360,7 +364,7 @@ input {
 }
 
 @media screen and (max-width: 720px) {
-    p.motivocontato {
+    input.inputerrado {
         margin-left: auto;
     }
 }

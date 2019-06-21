@@ -92,10 +92,11 @@
             <p>Ou preencha o formulário abaixo</p>
             <div class="centralizatexto">
                 <form>
-                    <p></p><strong>Nome</strong><input class="input1" type="text"></p>
-                    <p><strong>E-mail</strong><input class="input1" type="email"></p>
-                    <p class="motivocontato"><strong>Motivo de contato</strong><input type="text"></p>
-                    <button type="submit">Enviar</button>
+                    <p><label>Nome</label><input class="input1" id="nomeid" type="text" placeholder="Marco Aurélio" required="required" name="nome"></p>
+                    <p><label>E-mail</label><input class="input1" id="emailid" type="email" placeholder="youremail@server.com" required="required" name="email"></p>
+                    <p><label class="telefone">Telefone</label><input type="tel" placeholder="(xx)xxxxx-xxxx" name="telefone"></p>
+                    <p><label>Motivo de contato</label><input type="text" id="motivoid" placeholder="Escreva aqui" alt="Deixe aqui o motivo de seu contato" name="motivocontato"></p>
+                    <p><input type="submit" onclick="Enviar();" value="Enviar"></p>
                 </form>
             </div>
         </div>
