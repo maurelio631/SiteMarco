@@ -5,3 +5,12 @@ function Enviar() {
         alert('Obrigado ' + nome.value + ' seu interesse foi registrado, entrarei em contato em breve');
     }
 }
+
+
+var $doc = $('html, body');
+$('.scrollSuave').click(function() {
+    $doc.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+    return false;
+});
