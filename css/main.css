@@ -44,7 +44,9 @@ a {}
 
 a:hover {}
 
-p {}
+p {
+    margin: 12px;
+}
 
 div {}
 
@@ -352,6 +354,8 @@ label.telefone {}
 @media screen and (max-width: 720px) {
     .menu {
         width: 400px;
+        font-size: 10px;
+        padding: 10px 18px;
     }
 }
 
@@ -363,6 +367,12 @@ label.telefone {}
 
 @media screen and (max-width: 720px) {
     input {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    ul.menu.li.a {
         margin-left: auto;
     }
 }
