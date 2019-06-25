@@ -230,6 +230,7 @@ ul.menu.horizontal li {
 ul.menu.vertical li {
     display: block;
     margin: 1px 0;
+    margin-top: -6px;
 }
 
 .divpreta {
@@ -250,7 +251,7 @@ ul.menu li a {
     text-transform: uppercase;
     font-weight: bold;
     transition: background 1s;
-    margin-top: 6px;
+    margin-top: 12px;
 }
 
 ul.menu li a:hover {
