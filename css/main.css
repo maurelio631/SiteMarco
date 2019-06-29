@@ -35,7 +35,6 @@ h2 em {
 }
 
 h4 {
-    text-transform: uppercase;
     font-weight: bold;
     margin: 0;
 }
@@ -46,6 +45,7 @@ a:hover {}
 
 p {
     margin: 12px;
+    font-family: serif;
 }
 
 div {}
@@ -219,7 +219,7 @@ h1#logotipo a span {
 ul.menu {
     list-style: none;
     padding: inherit;
-    margin-top: -6px;
+    margin-top: -12px;
 }
 
 ul.menu.horizontal li {
@@ -300,14 +300,7 @@ a {
 
 .icone {
     font-size: 75px;
-}
-
-input {
-    margin-left: 10px;
-}
-
-.input1 {
-    margin-left: 130px;
+    color: black;
 }
 
 #subirTopo {
@@ -332,7 +325,29 @@ input {
     opacity: 1;
 }
 
-label.telefone {}
+label.nome {
+    margin-right: 52px;
+    font-weight: bold;
+}
+
+label.email {
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+label.telefone {
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+label.interesse {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.posrelative {
+    position: relative;
+}
 
 @media screen and (max-width: 1024px) {
     .container {
@@ -340,21 +355,12 @@ label.telefone {}
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 823px) {
     .menu.horizontal {
         display: none;
     }
     .menu.vertical {
         display: block;
-    }
-}
-
-@media screen and (min-width:801px) {
-    .menu.vertical {
-        display: none;
-    }
-    .menu.horizontal {
-        display: inline-block;
     }
 }
 
@@ -392,11 +398,5 @@ label.telefone {}
 @media screen and (max-width: 720px) {
     .w25 {
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    input {
-        margin-left: auto;
     }
 }
